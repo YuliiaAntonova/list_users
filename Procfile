@@ -1,1 +1,1 @@
-web: gunicorn app:serv_table
+web: gunicorn app:run
