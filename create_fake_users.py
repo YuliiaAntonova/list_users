@@ -1,7 +1,7 @@
 import random
 import sys
 from faker import Faker
-from bootstrap_table import db, User
+from bootstrap_models import db, User
 
 
 def create_fake_users(n):
