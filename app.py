@@ -31,7 +31,7 @@ class User(db.Model):
         }
 
 db.create_all()
-migrate = Migrate(app, db)
+
 
 @app.route('/')
 def index():
