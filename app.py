@@ -10,8 +10,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://cnitzxubyjqkir:2f0fbf9fd751619721b37a7675bb5499d4dff71c41530ae20e565c63f9fc9e0f@ec2-54-75-184-144.eu-west-1.compute.amazonaws.com:5432/dcmbsntuh551up'
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-migrate.init_app(app, db)
-
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
