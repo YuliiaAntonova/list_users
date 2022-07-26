@@ -2,7 +2,7 @@ import os
 
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
